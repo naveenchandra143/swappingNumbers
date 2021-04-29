@@ -23,6 +23,6 @@ function Submit(){
     }
     u(obj)
     alert("check out your answer on console")
-    console.log("afer the call by value")
+    console.log("afer the call by refernce")
     console.log(obj)
 }
