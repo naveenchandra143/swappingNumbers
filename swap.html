@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        CALL BY VALUE && CALL BY REFERNCE
+    </h1>
+    <div class="container">
+        <p><h3>Call By Value</h3>
+            Call by Value: Suppose there is a variable named “a”. Now, we store a primitive value(boolean, integer, float, etc) in the variable “a”.
+
+            Let us store an integer value in “a”, Let a=5. Now the variable “a” stores 5 and has an address location where that primitive value sits in memory.
+            
+            Now, suppose we copy the value of “a” in “b” by assignment (a=b). Now, “b” points to a new location in memory, containing the same data as variable “a”.
+            
+            Thus, a=b=5 but both points to separate locations in memory.
+            
+            This approach is called call by value where 2 variables become the same by copying the value but in 2 separate spots in the memory.
+            <br><span>for better understanding try it..</span><button onclick="submit()">callByValue</button>
+            </p>
+            
+        <p><h3>Call By Reference</h3>
+            Call by reference: Let’s say, we have an object stored in the variable “a”. The variable stores the location or the address where the object lives. Now we set b=a. Now that new variable “b” instead of pointing to a new location in the memory, points to the same location where “a” does. No new object is created, no copy is created. Both the variables point to the same object. This is like having 2 names.
+
+            This is call by reference. It behaves quite differently from by value. All objects interact by reference.
+            <br><span>for better understanding try it..</span><button onclick="submit()">callByValue</button>
+        </p>
+        <style>
+            body{
+                background-color: linen;
+            }
+            .container{
+                display: grid;
+                background-color: lightslategray;
+                padding: 0.4em;
+            }
+            p{
+                border-bottom: 10px mediumaquamarine;
+                word-spacing: 1em;
+                line-height: 1;
+                
+            }
+            button{
+                width: 6em;
+            }
+            h3{
+                text-decoration: underline;
+            }
+            span{
+                color:orange;
+            }
+        </style>
+
+    </div>
+</body>
+</html>
